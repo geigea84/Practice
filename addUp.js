@@ -7,7 +7,7 @@ let numArr = [];
 function addUp(n) {
     if (n > 0) {
         numArr.push(n);
-        console.log(numArr);
+        //console.log(numArr);
         n = n - 1;
         addUp(n);
     }
