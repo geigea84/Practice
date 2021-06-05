@@ -3,6 +3,7 @@
 let highest;
 
 //for loop
+
 // function findHighest(numArr) {
 //     for (i = 0; i < numArr.length; i++) {
 //         if (numArr[i] < numArr[i + 1]) {
