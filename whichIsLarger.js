@@ -7,6 +7,13 @@
 // If g returns the larger number, return the string g.
 // If the functions return the same number, return the string neither.
 
+// Examples
+// whichIsLarger(() => 5, () => 10) ➞ "g"
+
+// whichIsLarger(() => 25,  () => 25) ➞ "neither"
+
+// whichIsLarger(() => 505050, () => 5050) ➞ "f"
+
 function whichIsLarger(f, g) {
     if (f > g) {
         console.log("f");
@@ -29,6 +36,9 @@ function g() {
 
 //whichIsLarger(() => 10, () => 5);
 //expected f, returns g
+
+whichIsLarger(() => 2, () => 1);
+//expected f, returns f
 
 //whichIsLarger(5, 10);
 //expected g, returns g
