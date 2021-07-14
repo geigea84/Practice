@@ -22,7 +22,7 @@ function whichIsLarger(f, g) {
         console.log("g");
     }
     else {
-        console.log("neither");;
+        console.log("neither");
     }
 }
 
