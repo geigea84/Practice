@@ -37,7 +37,7 @@ function g() {
 //whichIsLarger(() => 10, () => 5);
 //expected f, returns g
 
-whichIsLarger(() => 2, () => 1);
+//whichIsLarger(() => 2, () => 1);
 //expected f, returns f
 
 //whichIsLarger(5, 10);
