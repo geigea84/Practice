@@ -35,16 +35,28 @@ function g() {
 }
 
 //whichIsLarger(() => 10, () => 5);
-//expected f, returns g
+//expected f, returns g FAIL
 
 //whichIsLarger(() => 100, () => 10);
 //expected f, returns f
 
 //whichIsLarger(() => 100, () => 50);
-//expected f, returns g
+//expected f, returns g FAIL
+
+//whichIsLarger(() => 100, () => 5);
+//expected f, returns g FAIL
+
+//whichIsLarger(() => 1000, () => 2);
+//expected f, returns g FAIL
+
+//whichIsLarger(() => 2, () => 1000);
+//expected g, returns f FAIL
 
 //whichIsLarger(() => 2, () => 1);
 //expected f, returns f
+
+//whichIsLarger(() => 1, () => 2);
+//expected g, returns g
 
 //whichIsLarger(5, 10);
 //expected g, returns g
