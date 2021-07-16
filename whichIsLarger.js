@@ -14,7 +14,18 @@
 
 // whichIsLarger(() => 505050, () => 5050) ➞ "f"
 
+let typeF;
+let typeG;
+let valueF;
+let valueG;
+
 function whichIsLarger(f, g) {
+    typeF = typeof f;
+    typeG = typeof g;
+    valueF = f;
+    valueG = g;
+    console.log(f + ", " + g);
+
     if (f > g) {
         // console.log("f");
         return "f";
@@ -37,32 +48,52 @@ function g() {
     return 5;
 }
 
+// function whichIsLargerNoArg() {
+//     //f();
+//     //g();
+//     if (f() > g()) {
+//         console.log("f");
+//         return "f";
+//     }
+//     else if (g() > f()) {
+//         console.log("g");
+//         return "g";
+//     }
+//     else {
+//         console.log("neither");
+//         return "neither";
+//     }
+// }
+
 //what type is a function returning? (string or int?)
 
 const funArr = [
     whichIsLarger(() => 10, () => 5),
     whichIsLarger(() => 100, () => 10),
-    whichIsLarger(() => 100, () => 50),
-    whichIsLarger(() => 100, () => 5),
-    whichIsLarger(() => 1000, () => 2),
-    whichIsLarger(() => 2, () => 1000),
-    whichIsLarger(() => 2, () => 1),
-    whichIsLarger(() => 1, () => 2),
-    whichIsLarger(5, 10),
-    whichIsLarger(5, 5),
-    whichIsLarger(f(), g())
+    whichIsLarger(() => 1, () => 1),
+    // whichIsLarger(() => 100, () => 50),
+    // whichIsLarger(() => 100, () => 5),
+    // whichIsLarger(() => 1000, () => 2),
+    // whichIsLarger(() => 2, () => 1000),
+    // whichIsLarger(() => 2, () => 1),
+    // whichIsLarger(() => 1, () => 2),
+    // whichIsLarger(5, 10),
+    // whichIsLarger(5, 5),
+    // whichIsLarger(f(), g())
 ]
 
 const expectedArr = [
-    "f", "f", "f", "f", "f", "g", "f", "g", "g", "neither", "f"
+    "f", "f", "neither", "f", "f", "f", "g", "f", "g", "g", "neither", "f"
 ]
 
 function testFunArr() {
     for (let i = 0; i < funArr.length; i++) {
         console.log(
             "Test " + [i + 1] + "\n" + 
-            "Expected " + expectedArr[i] + ", " +
-            "returned " + funArr[i]
+            "expected " + expectedArr[i] + ", " +
+            "returned " + funArr[i] + "\n" +
+            "values: " + valueF + ", " + valueG + "\n" +
+            "type: " + typeF + ", " + typeG
         );
 
         if (expectedArr[i] == funArr[i]) {
@@ -155,3 +186,4 @@ function testFunArr() {
 
 //testAll();
 testFunArr();
+//whichIsLargerNoArg();
