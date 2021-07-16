@@ -37,6 +37,8 @@ function g() {
     return 5;
 }
 
+//what type is a function returning? (string or int?)
+
 const funArr = [
     whichIsLarger(() => 10, () => 5),
     whichIsLarger(() => 100, () => 10),
