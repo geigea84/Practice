@@ -1,3 +1,4 @@
+//https://edabit.com/challenge/RGQXN4TG2CQoBAReQ
 //Create a function that calculates the number of different squares
 //in an n * n square grid.
 
