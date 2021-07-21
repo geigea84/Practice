@@ -9,7 +9,7 @@ function minMax(numArr) {
     min = numArr[0];
     max = numArr[0];
 
-    for (i = 0; i < numArr.length; i++) {
+    for (let i = 0; i < numArr.length; i++) {
         if (min > numArr[i]) {
             min = numArr[i];
         }
