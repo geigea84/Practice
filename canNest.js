@@ -64,5 +64,14 @@ function canNest(arrOne, arrTwo) {
     }
 }
 
-//canNest([1, 2, 3, 4], [0, 6]);
+canNest([1, 2, 3, 4], [0, 6]);
+//expected true, returned true
+
 canNest([1, 2, 3, 4], [2, 3]);
+//expected false, returned false
+
+canNest([9, 9, 8], [8, 9]);
+//expected false, returned false
+
+canNest([3, 1], [4, 0])
+//expected true, returned true
