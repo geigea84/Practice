@@ -24,7 +24,7 @@ function whichIsLarger(f, g) {
     typeG = typeof g;
     valueF = f;
     valueG = g;
-    console.log(f + ", " + g);
+    // console.log(f + ", " + g);
 
     if (f > g) {
         // console.log("f");
@@ -71,15 +71,15 @@ const funArr = [
     whichIsLarger(() => 10, () => 5),
     whichIsLarger(() => 100, () => 10),
     whichIsLarger(() => 1, () => 1),
-    // whichIsLarger(() => 100, () => 50),
-    // whichIsLarger(() => 100, () => 5),
-    // whichIsLarger(() => 1000, () => 2),
-    // whichIsLarger(() => 2, () => 1000),
-    // whichIsLarger(() => 2, () => 1),
-    // whichIsLarger(() => 1, () => 2),
-    // whichIsLarger(5, 10),
-    // whichIsLarger(5, 5),
-    // whichIsLarger(f(), g())
+    whichIsLarger(() => 100, () => 50),
+    whichIsLarger(() => 100, () => 5),
+    whichIsLarger(() => 1000, () => 2),
+    whichIsLarger(() => 2, () => 1000),
+    whichIsLarger(() => 2, () => 1),
+    whichIsLarger(() => 1, () => 2),
+    whichIsLarger(5, 10),
+    whichIsLarger(5, 5),
+    whichIsLarger(f(), g())
 ]
 
 const expectedArr = [
