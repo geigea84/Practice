@@ -92,6 +92,7 @@ function testFunArr() {
             "Test " + [i + 1] + "\n" + 
             "expected " + expectedArr[i] + ", " +
             "returned " + funArr[i] + "\n" +
+            // values line is broken!==========================================================
             "values: " + valueF + ", " + valueG + "\n" +
             "type: " + typeF + ", " + typeG
         );
