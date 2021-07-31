@@ -6,7 +6,7 @@
 // array as an argument and return the drinks 
 // objects sorted by price in ascending order.
 
-const drinks = [
+let drinks = [
     {
         name: "red",
         price: 30
@@ -30,5 +30,11 @@ const drinks = [
 ];
 
 function sortDrinksByPrice(drinks) {
+    drinks = drinks.sort((a, b) => {
+        return a.price - b.price;
+    });
 
+    console.log(drinks);
 }
+
+sortDrinksByPrice(drinks);
