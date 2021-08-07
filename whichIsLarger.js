@@ -20,14 +20,17 @@ let valueF;
 let valueG;
 
 function whichIsLarger(f, g) {
+    // put these values in testFunArr?
     typeF = typeof f;
     typeG = typeof g;
     valueF = f;
     valueG = g;
-    // console.log(f + ", " + g);
+    // console.log(valueF + ", " + valueG);
 
     if (f > g) {
         // console.log("f");
+        // valueF = null;
+        // valueG = null;
         return "f";
     }
     else if (g > f) {
@@ -89,7 +92,7 @@ const expectedArr = [
 function testFunArr() {
     for (let i = 0; i < funArr.length; i++) {
         console.log(
-            "Test " + [i + 1] + "\n" + 
+            "Test " + [i + 1] + "\n" +
             "expected " + expectedArr[i] + ", " +
             "returned " + funArr[i] + "\n" +
             // values line is broken!==========================================================
