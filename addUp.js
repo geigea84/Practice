@@ -19,6 +19,6 @@ function addUp(n) {
     }
 }
 
-//addUp(4);
-//addUp(13);
-addUp(600);
+addUp(4);
+// addUp(13);
+// addUp(600);
